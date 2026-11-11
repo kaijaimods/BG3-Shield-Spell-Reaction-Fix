@@ -1,0 +1,4 @@
+new entry "Interrupt_Shield_Wizard"
+type "InterruptData"
+using "Interrupt_Shield_Wizard"
+data "Conditions" "not HasVerbalComponentBlocked(context.Observer) and not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and ((HasInterruptedAttack() and IsShieldSpellInterruptInteresting(5, context.Source)) or MagicMissileSpellCheck()) and not AnyEntityIsItem() and not HasStatus('SHIELD',context.Observer);"
